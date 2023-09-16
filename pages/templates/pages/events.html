@@ -1,0 +1,40 @@
+{% extends "pages/base.html" %}
+{% load static %}
+
+{% block content %}
+
+<style>
+
+    .center-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+        .full-width-img {
+            max-width: 100%;
+            height: auto;
+    }
+    </style>
+    <header class="masthead bg-primary text-white text-center">
+        <div class="container d-flex align-items-center flex-column">
+            <!-- Masthead Avatar Image-->
+            <img class="masthead-avatar mb-5" src="{% static 'pages/images/paper.png' %}" alt="..." />
+            <!-- Masthead Heading-->
+            <h1 class="masthead-heading text-uppercase mb-0">Events</h1>
+            <!-- Icon Divider-->
+            <div class="divider-custom divider-light">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <!-- Masthead Subheading-->
+            <p class="masthead-subheading font-weight-light mb-0">To learn more, feel free to attend any of these events below.</p>
+        </div>
+    </header>
+    <section class="page-section mb-0" id="new-section4">
+        <div class ="center-container">
+            <img class="full-width-img" src="{% static 'pages/images/flyer.png' %}" alt="Flyer Image Failed Lol">
+        </div>
+    </section>
+{% endblock content %}

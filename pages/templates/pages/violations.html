@@ -1,0 +1,127 @@
+{% extends "pages/base.html" %}
+{% load static %}
+{% load django_bootstrap5 %}
+
+{% block content %}
+    <header class="masthead bg-primary text-white text-center">
+        <div class="container d-flex align-items-center flex-column">
+            <!-- Masthead Avatar Image-->
+            <img class="masthead-avatar mb-5" src="{% static 'pages/images/noco2.png' %}" alt="..." />
+            <!-- Masthead Heading-->
+            <h1 class="masthead-heading text-uppercase mb-0">Air Quality Violations</h1>
+            <!-- Icon Divider-->
+            <div class="divider-custom divider-light">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <!-- Masthead Subheading-->
+            <p class="masthead-subheading font-weight-light mb-0">In the South End, if you see any of these bad physical signs, they could be air violations!</p>
+        </div>
+    </header>
+    <style>
+        .custom-list-style li {
+            margin-bottom: 2rem;  /* Adjust this value as needed */
+        }
+    </style>
+    <section class="page-section text-secondary mb-0" id="new-section">
+        <div class="container">
+            <!-- New Section Heading -->
+            <h2 class="page-section-heading text-center text-uppercase">What are they?</h2>
+            
+            <!-- Icon Divider-->
+            <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            
+            <!-- New Section Content -->
+            <div class="row">
+                <!-- I'm using col-lg-7 here to make the text wider than the previous section -->
+                <div class="col-lg-7 mx-auto">
+                    <ul class="lead list-unstyled text-center custom-list-style">
+                        <!-- Bullet Points -->
+                        <li>
+                            <h4>Any Unclear, Colored, Excessive Smoke</h4>
+                            <p>(Can be gray or any other color and must appear from any smoke stack or property)</p>
+                        </li>
+                        <li><h4>Any Foul Odor Including Waste, Fire, or Chemical Smells</h4></li>
+                        <li><h4>Any Developing Health Issues Such as Asthma</h4></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="page-section bg-primary text-white mb-0" id="new-section2">
+        <div class="container">
+            <!-- New Section Heading -->
+            <h2 class="page-section-heading text-center text-uppercase text-white">How Do I Report Them?</h2>
+            
+            <!-- Icon Divider-->
+            <div class="divider-custom divider-light">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            
+            <!-- New Section Content -->
+            <div class="row">
+                <!-- I'm using col-lg-7 here to make the text wider than the previous section -->
+                <div class="col-lg-7 mx-auto">
+                    <ul class="lead list-unstyled text-center custom-list-style">
+                        <!-- Bullet Points -->
+                        <li><h2>Phone:</h2></li>
+                        <li><h4>Step 1: Call PEAS EGLE: (800) 292-4706</h4></li>
+                        <li>
+                            <h4>Step 2: State the location and description of air quality violation(s)</h4>
+                            <p>(Location: South End, Dearborn and Factory Name/Location)</p>
+                            <p>(Description: Bad Physical Sign(s))</p>
+                        </li>
+                        <div class="divider-custom divider-light">
+                            <div class="divider-custom-line"></div>
+                            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                            <div class="divider-custom-line"></div>
+                        </div>
+                        <li><h2>Online:</h2></li>
+                        <li><h4>Step 1: Google Michigan Department of Air Quality</h4></li>
+                        <li>
+                            <h4>Step 2: Click on the link that says “Michigan Department of Air Quality<</h4>
+                            <p>(Usually, it's the first link)</p>
+                        </li>
+                        <li><h4>Step 3: Click “Submit a Violation”</h4></li>
+                        <li><h4>Step 4: Fill out and submit the form</h4></li>
+                        <!-- Add more points as needed -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="page-section text-secondary mb-0" id="new-section3">
+        <div class="container">
+            <!-- New Section Heading -->
+            <h2 class="page-section-heading text-center text-uppercase">WHy Should I Report Them?</h2>
+            
+            <!-- Icon Divider-->
+            <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            
+            <!-- New Section Content -->
+            <div class="row">
+                <!-- I'm using col-lg-8 here to make the text wider than the previous section -->
+                <div class="col-lg-8 mx-auto text-center lead">
+                    <h4>
+                        On April 11, 2023, a settlement between Cleveland Cliffs Inc. and PEAS EGLE arose over air quality violations 
+                        by the company. Because of this settlement, our community will receive over $250,000 in funding. The 
+                        Concerned Residents of South Dearborn will manage the funding to purchase an air purifier for every home in the 
+                        South End. AQ violations brought this environmental project into fruition, so reporting these violations can help 
+                        your community.
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock content %}

@@ -1,0 +1,58 @@
+{% extends "pages/base.html" %}
+{% load static %}
+{% load django_bootstrap5 %}
+
+{% block content %}
+    <header class="masthead bg-primary text-white text-center">
+        <div class="container d-flex align-items-center flex-column">
+            <!-- Masthead Avatar Image-->
+            <img class="masthead-avatar mb-5" src="{% static 'pages/images/purifier.png' %}" alt="..." />
+            <!-- Masthead Heading-->
+            <h1 class="masthead-heading text-uppercase mb-0">Air Purifiers</h1>
+            <!-- Icon Divider-->
+            <div class="divider-custom divider-light">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <!-- Masthead Subheading-->
+            <p class="masthead-subheading font-weight-light mb-0">In the next couple of months, every home in the South End will be receiving an air purifier. 
+                If you live in the South End of Dearborn, here's how you can install one.</p>
+        </div>
+    </header>
+    <style>
+        .custom-list-style li {
+            margin-bottom: 2rem;  /* Adjust this value as needed */
+        }
+    </style>
+    <section class="page-section text-secondary mb-0" id="new-section">
+        <div class="container">
+            <!-- New Section Heading -->
+            <h2 class="page-section-heading text-center text-uppercase">How Do I Install One in My Home?</h2>
+            
+            <!-- Icon Divider-->
+            <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            
+            <!-- New Section Content -->
+            <div class="row">
+                <!-- I'm using col-lg-7 here to make the text wider than the previous section -->
+                <div class="col-lg-7 mx-auto">
+                    <ul class="lead list-unstyled text-center custom-list-style">
+                        <!-- Bullet Points -->
+                        <li><h4>Step 1: Install purifier</h4></li>
+                        <li><h4>Step 2: Install purifier</h4></li>
+                        <li><h4>Step 3: Install purifier</h4></li>
+                        <li><h4>Step 4: Install purifier</h4></li>
+                        <li><h4>Step 5: Install purifier</h4></li>
+                        <li><h4>Step 6: You're done. Congrats.</h4></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock content %}
